@@ -6,7 +6,7 @@ on:
 
 env:
   image: swiggy:v1
-  repo: rahamshaik/nodeimage
+  repo: srikeerthi8/nodeimage
   
 jobs: 
   Build-Push-Docker-Image: 
