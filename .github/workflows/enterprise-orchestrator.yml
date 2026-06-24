@@ -20,8 +20,7 @@ jobs:
         run:  npm run build        
   test: 
       runs-on:  ubuntu-latest
-
-    steps: 
+   steps: 
       - name:  Checkout Code
         uses:  actions/checkout@v7
 
@@ -37,7 +36,6 @@ jobs:
         run:  npm test
   deploy: 
       runs-on:  ubuntu-latest
-
     steps: 
       - name:  Deploy Application
         run:  echo "Deploying ..."
