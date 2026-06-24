@@ -20,22 +20,22 @@ jobs:
         run:  npm run build        
   test: 
       runs-on:  ubuntu-latest
-   steps: 
-      - name:  Checkout Code
-        uses:  actions/checkout@v7
+      steps: 
+       - name:  Checkout Code
+         uses:  actions/checkout@v7
 
-      - name:  Setup NodeJS
-        uses:  actions/setup-node@v3
-        with: 
-          node-version:  22
+        - name:  Setup NodeJS
+          uses:  actions/setup-node@v3
+          with: 
+            node-version:  22
 
-      - name:  Install Dependencies
-        run:  npm install
+        - name:  Install Dependencies
+          run:  npm install
 
-      - name:  Run Tests
-        run:  npm test
+        - name:  Run Tests
+          run:  npm test
   deploy: 
       runs-on:  ubuntu-latest
-    steps: 
-      - name:  Deploy Application
-        run:  echo "Deploying ..."
+      steps: 
+        - name:  Deploy Application
+          run:  echo "Deploying ..."
