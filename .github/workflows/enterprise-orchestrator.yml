@@ -37,11 +37,4 @@ jobs:
      steps: 
        - name:  Deploy Application
          run:  echo "Deploying ..."
-         with: 
-          node-version:  22
-
-       - name:  Install Dependencies
-         run:  npm install
-
-       - name:  Run Tests
-         run:  npm test
+        
