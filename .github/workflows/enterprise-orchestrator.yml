@@ -19,8 +19,7 @@ jobs:
       - name:  Build Application
         run:  npm run build        
   test: 
-    needs:  build
-    runs-on:  ubuntu-latest
+      runs-on:  ubuntu-latest
 
     steps: 
       - name:  Checkout Code
@@ -37,8 +36,7 @@ jobs:
       - name:  Run Tests
         run:  npm test
   deploy: 
-    needs:  [build,test]
-    runs-on:  ubuntu-latest
+      runs-on:  ubuntu-latest
 
     steps: 
       - name:  Deploy Application
