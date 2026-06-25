@@ -42,7 +42,9 @@ jobs:
         with:
           path: ~/.npm
           key:  ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          
+          restore-keys: |
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-          
       - name: Deploy
         run: echo "code is deployed"
 
