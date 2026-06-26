@@ -2,7 +2,7 @@ name:  NodeJs
 
 on:
   push:
-    branches: master
+    branches: main
 
 
 permissions: 
